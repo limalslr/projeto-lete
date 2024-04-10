@@ -1,0 +1,127 @@
+@charset "UTF-8"
+
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url(../fontes/Grand_Hotel/GrandHotel-Regular.ttf);}
+
+@font-face {
+    font-family:'Handlee-Regular';
+    src: url(../fontes/Handlee/Handlee-Regular.ttf);
+}
+
+:root {
+    --cor0: #078C03;
+    --cor1: #A62E2E;
+    --cor2: #F2A2A2;
+    --cor3: #F2F2F2;
+    --cor4: #0D0D0D;
+
+    --font1: 'Arial';
+    --font2:'Handlee-Regular';
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));        
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.541);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.466);
+    margin-bottom: 5px;
+}
+
+i#burguer {
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3)) ; 
+    color: var(--cor1);
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    font-family: var(--font1);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: var(--cor3);    
+    border-top: 2px solid gray;
+}
+
+menu > ul > li > a:hover {
+    color: var(--cor3);
+    background-color: var(--cor1);
+}
+
+body {
+    height: 100lvh;
+    background-color: var(--cor3);
+    background-image: url('../imagens/logo_transparente.png');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+main {
+    height:  50vh;
+    position: relative;
+}
+
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.623);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform .3s border 1s;
+}
+    
+h2 {
+    color: var(--cor1);       
+    font-family: var(--font1);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.299);
+    margin: 10px;
+}
+
+h3 > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: 70vw;
+}
+
+main > p > a {
+    text-decoration: none;
+}
+
+img {
+    border-radius: 10px;        
+    box-shadow: 0px 2px 3px black;
+    margin: 10px;
+}
