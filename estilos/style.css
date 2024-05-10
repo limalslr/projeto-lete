@@ -24,11 +24,25 @@
     --font2:'Handlee-Regular';
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+div#interface {
+    margin: 10px;
+    padding: auto;
+}
+
 header {
     background-image: linear-gradient(to right, var(--cor2), var(--cor3));      
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.541);
     border-radius: 10px;
-    padding: 10px;
 }
 
 h1 {
@@ -38,60 +52,65 @@ h1 {
     font-size: 6vw;
     text-align: center;
     text-shadow: 1px 2px rgba(0, 0, 0, 0.466);
-    margin-bottom: 5px;
-}
-
-i#burguer {
-    color: black;
-    display: block;
-    text-align: center;
+    margin: 10px;
     padding: 10px;
-    cursor: pointer;
 }
 
-i#burguer:hover {
-    background-image: linear-gradient(to right, var(--cor2), var(--cor3)) ; 
-    color: var(--cor1);
-}
-
-menu {
-    display: none;
-}
-
-menu > ul {
-    list-style-type: none;
-}
-
-menu > ul > li > a {
+li {
     font-family: var(--font1);
-    display: block;
+    display: inline-block;
+    margin-left: 10px;
     padding: 10px;
-    text-decoration: none;
     text-align: center;
-    background-color: rgb(87, 87, 87);
-    color: var(--cor3);    
-    border-top: 2px solid gray;
+    background-color: rgba(87, 87, 87, 0.479);    
+    border-radius: 5px;
 }
 
-menu > ul > li > a:hover {
+li > a {
     color: var(--cor3);
-    background-color: var(--cor1);
+    text-decoration: none;
+}
+
+li > a:hover {
+    color: var(--cor1);    
 }
 
 body {
-    height: 100vh;
+    height: 800px;
     background-color: var(--cor3);
     background-image: url('../imagens/logo_transparente.png');
     background-position: center center;
-    background-size: cover;
-    
+    background-size: cover;   
 }
 
 main {
+    width: auto;
     height:  50vh;
     position: relative;
 }
 
+/*main > p > a {
+    text-decoration: none;
+}*/
+
+img {
+    border-radius: 10px;        
+    box-shadow: 0px 2px 3px black;
+    margin: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+section#corpo {
+    display: block;
+    width: 50vw;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
 
 section#redes-sociais img {
     width: 30px;
@@ -107,12 +126,25 @@ section#redes-sociais img:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
     transition: transform .3s border 1s;
 }
+
+aside#lateral {
+    display: ;
+    width: 45vw;
+    float: right;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+article {
+    width: 600px;
+}
     
-h2 {
+h2, h3 {
     color: var(--cor1);       
     font-family: var(--font1);
     text-shadow: 1px 1px rgba(0, 0, 0, 0.299);
     margin: 10px;
+    text-align: justify;
 }
 
 h3 > p {
@@ -121,12 +153,11 @@ h3 > p {
     width: 70vw;
 }
 
-main > p > a {
-    text-decoration: none;
+footer#rodape {
+    clear: both; /*mostra o conteúdo fora das divisões de section e aside*/
+    border-top: 1px solid #606060;
 }
 
-img {
-    border-radius: 10px;        
-    box-shadow: 0px 2px 3px black;
-    margin: 10px;
+footer#rodape p {
+    text-align: center;
 }
